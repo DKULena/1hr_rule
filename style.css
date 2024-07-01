@@ -15,10 +15,13 @@
 
 body {
   background: #5b2386;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
 height: 100vh;
+
   font-family: "GmarketSansMedium";
   color: #ffffff;
   display: flex;
@@ -58,16 +61,16 @@ height: 100vh;
   }
 
   .description {
-    background-image: url(./src/quote.png);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background: url(./src/quote.png) no-repeat center;
+    /* background-repeat: no-repeat;
+    background-position: 50% 80%; */
     .emphasize {
       font-weight: 700;
       display: inline-block;
       font-size: 24px;
       line-height: 24px;
     }
-    font-family: "GmarketSansMedium";
+    /* font-family: "GmarketSansMedium"; */
     color: #fff;
     font-size: 18px;
     line-height: 18px;
@@ -75,17 +78,25 @@ height: 100vh;
   }
 
   .input {
-    font-family: "GmarketSansMedium";
+    /* font-family: "GmarketSansMedium"; */
     color: #fff;
     font-size: 24px;
     line-height: 24px;
     text-align: center;
-    .programming::placeholder, .practice::placeholder {
-        font-size: 24px;
+    input {
         text-align: center;
+        font-size: 24px;
         color: #BABCBE;
         vertical-align: middle;
     }
+    .programming::placeholder, .practice::placeholder {
+        /* font-size: 24px; */
+        /* text-align: center; */
+        color: #BABCBE;
+        /* vertical-align: middle; */
+    }
+
+
     input {
       width: 228px;
       height: 57px;
@@ -94,23 +105,25 @@ height: 100vh;
 
       border-radius: 7px;
     }
-
-    .result.box {
+  }
+  .result.box {
+    text-align: center;
+    margin: 115px 0 0 0;
+    .result {
+      background-color: #fcee21;
+      width: 565px;
+      height: 66px;
+      border-radius: 56px;
       text-align: center;
-      margin: 115px 0 0 0;
-      .result {
-        background-color: #fcee21;
-        width: 565px;
-        height: 66px;
-        border-radius: 56px;
-        text-align: center;
-        text-decoration: none;
-        color: #5b2386;
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 24px;
-        padding: 21px 49px;
-      }
+      text-decoration: none;
+      color: #5b2386;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 24px;
+      padding: 21px 49px;
+    }
+    img {
+        vertical-align: bottom;
     }
   }
   .tell.you\! {
@@ -140,14 +153,14 @@ height: 100vh;
   .link {
     align-self: center;
     margin-bottom: 130px;
-    a {
+    button {
       display: inline-block;
       color: #5b2386;
-      text-decoration: none;
       font-size: 24px;
       font-weight: 700;
       text-align: center;
       padding: 21px 49px;
+      cursor: pointer;
     }
     .train {
       /* width: 356px; */

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>1만 시간의 법칙</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="modal.css" />
   </head>
   <body>
     <div class="container">
@@ -34,14 +35,16 @@
         </p>
         <p class="so practice">
           그래서 앞으로 매일 하루에
-          <input type="text" placeholder="예)5시간" class="practice"/>시간씩 훈련할 것이다.
+          <input type="text" placeholder="예)5시간" class="practice" />시간씩
+          훈련할 것이다.
         </p>
       </div>
 
       <div class="result box">
-        <a href="#" class="result"
-          >나는 며칠동안 훈련을 해야 1만 시간이 될까?</a
-        >
+        <a href="#" class="result">
+          나는 며칠동안 훈련을 해야 1만 시간이 될까?
+        </a>
+        <img src="./src/click.png" alt="" />
       </div>
 
       <div class="tell you!">
@@ -50,9 +53,36 @@
       </div>
 
       <div class="link">
-        <a href="#" class="train">훈련하러 가기 GO!GO!</a>
-        <a href="#" class="share">공유하기</a>
+        <button class="train">훈련하러 가기 GO!GO!</button>
+        <button class="share">공유하기</button>
+        <!-- <a href="#" class="train">훈련하러 가기 GO!GO!</a>
+        <a href="#" class="share">공유하기</a> -->
       </div>
+
+      <section class="modalContainer hidden">
+        <div class="modal">
+          <p class="fighting">화이팅!!♥♥♥</p>
+          <p class="cheer up">당신의 꿈을 응원합니다!</p>
+          <img src="./src/licat.png" alt="" class="licat" />
+          <div class="GO">
+            <a href="#">종료하고 진짜 훈련하러 가기 GO!GO!</a>
+          </div>
+        </div>
+      </section>
+
+      <script>
+        const modalOpenButton = document.querySelector(".train");
+        const modalCloseButton = document.querySelector(".GO");
+        const modal = document.querySelector(".modalContainer");
+
+        modalOpenButton.addEventListener("click", () => {
+          modal.classList.remove("hidden");
+        });
+
+        modalCloseButton.addEventListener("click", () => {
+          modal.classList.add("hidden");
+        });
+      </script>
 
       <footer class="copyright">
         <img src="./src/weniv-logo2.png" alt="" class="weniv" />

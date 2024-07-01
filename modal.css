@@ -1,0 +1,77 @@
+@font-face {
+    font-family: "OTEnjoystoriesBA";
+    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff")
+      format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "GmarketSansMedium";
+    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+      format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .modalContainer.hidden {
+    display: none;
+  }
+
+  .modalContainer {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    
+    .modal{
+      position: absolute;
+      background-color: white;
+      box-shadow: 0px 0px 20px 0px #00000080;
+      border-radius: 30px;
+      width: 800px;
+      height: 800px;
+      display: flex;
+      flex-direction: column;
+      font-family: "OTEnjoystoriesBA";
+      color: #5B2386;
+      /* height: 800px; */
+      box-sizing: border-box;
+      padding: 76px 0px 68px 0px;
+      /* text-align: center; */
+      align-items: center;
+      transform: translateY(-50%);
+      
+      .fighting {
+        margin: 0px;
+        padding: 0px;
+        font-weight: bold;
+        font-size: 96px;
+      }
+      .cheer.up {
+        margin: 4px 0 29px 0;
+        font-weight: bold;
+        font-size: 36px;
+      }
+      img {
+        width: 433px;
+        height: 337px;
+        margin-bottom: 74px;
+      }
+      .GO {
+        font-family: "GmarketSansMedium";
+        background-color: #FCEE21;
+        border-radius: 56px;
+        padding: 21px 49px;
+        a {
+          font-weight: bold;
+          font-size: 24px;
+          text-decoration: none;
+        }
+      }
+    }
+    }
