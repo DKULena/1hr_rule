@@ -20,7 +20,7 @@ body {
 }
 
 .container {
-height: 100vh;
+  height: 100vh;
 
   font-family: "GmarketSansMedium";
   color: #ffffff;
@@ -29,14 +29,14 @@ height: 100vh;
 
   .logo {
     width: 564px;
-    height: 265px;
-    border: solid 5px white;
+    /* height: 265px; */
     margin-top: 120px;
     background-image: url(./src/clock.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     align-self: center;
+    min-height: 265px;
     /* .clock {
       width: 261px;
       height: 265px;
@@ -65,7 +65,7 @@ height: 100vh;
   }
 
   .description {
-    background: url(./src/quote.png) no-repeat center;
+    background: url(./src/quotes.png) no-repeat center;
     /* background-repeat: no-repeat;
     background-position: 50% 80%; */
     .emphasize {
@@ -88,18 +88,18 @@ height: 100vh;
     line-height: 24px;
     text-align: center;
     input {
-        text-align: center;
-        font-size: 24px;
-        color: #BABCBE;
-        vertical-align: middle;
+      text-align: center;
+      font-size: 24px;
+      color: #babcbe;
+      vertical-align: middle;
     }
-    .programming::placeholder, .practice::placeholder {
-        /* font-size: 24px; */
-        /* text-align: center; */
-        color: #BABCBE;
-        /* vertical-align: middle; */
+    .programming::placeholder,
+    .practice::placeholder {
+      /* font-size: 24px; */
+      /* text-align: center; */
+      color: #babcbe;
+      /* vertical-align: middle; */
     }
-
 
     input {
       width: 228px;
@@ -110,24 +110,31 @@ height: 100vh;
       border-radius: 7px;
     }
   }
-  .result.box {
-    text-align: center;
+  .result.container {
+    background: url(./src/click.png) no-repeat;
+    background-position: 100% 100%;
+    width: 636px;
+    min-height: 86px;
+    align-self: center;
     margin: 115px 0 0 0;
-    .result {
+    .result.box {
+      text-align: center;
       background-color: #fcee21;
+      text-align: center;
       width: 565px;
       height: 66px;
       border-radius: 56px;
-      text-align: center;
       text-decoration: none;
       color: #5b2386;
       font-weight: 700;
       font-size: 24px;
       line-height: 24px;
       padding: 21px 49px;
+      box-sizing: border-box;
     }
-    img {
-        vertical-align: bottom;
+    .result {
+      text-decoration: none;
+      white-space: nowrap;
     }
   }
   .tell.you\! {
