@@ -1,0 +1,114 @@
+@media (max-width: 360px) {
+  .container .logo {
+    width: 267px;
+    min-height: 126px;
+    margin-top: 41px;
+  }
+  .container .logo .phrase {
+    padding-top: 35px;
+    width: 267px;
+    height: 54px;
+  }
+
+  .container .practice.font.box .practice.font {
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  .container .description.box {
+    width: 302px;
+    background-size: contain;
+    background-position: 50% 30%;
+  }
+  .container .description.box .description {
+    width: 290px;
+    font-size: 14px;
+  }
+  .container .description.box .description .emphasize {
+    font-weight: bold;
+  }
+
+
+
+  .container .input {
+    margin-top: 62px;
+    font-size: 14px;
+}
+.container .input input {
+    width: 156px;
+    height: 37px;
+    margin: 0 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.container .input input .so.practice {
+    margin-top: 0px;
+}
+
+.container .result.container {
+    background-size: 43px 48px;
+    width: 290px;
+    height: 78px;
+    margin: 49px 0 64px;
+    
+}
+.container .result.container .result.box{
+    border-radius: 13px;
+    width: 241px;
+    height: 68px;
+    align-self: center;
+    text-align: center;
+}
+.container .result.container .result.box a {
+    white-space: wrap;
+    font-size: 14px;
+}
+
+.container .tell.you\! {
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: 55px;
+}
+.container .tell.you\! .day {
+    margin: 15px 0;
+}
+.container .tell.you\! .subject b, .container .tell.you\! .day b {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 8px;
+}
+
+.container .link button {
+    font-size: 14px;
+    padding: 13.5px 17.5px 12.5px;
+}
+
+.container .copyright {
+    color: #FFFFFFB2;
+    font-size: 9px;
+    margin-bottom: 32px;
+}
+
+.container .copyright img {
+    width: 91px;
+    height: 18px;
+    margin-bottom: 17px;
+}
+
+
+}
+
+
+
+
+@media (min-width: 361px) {
+
+    .container .input .so.practice {
+        margin-top: 27px;
+    }
+    .container .input .so.practice br {
+        display: none;
+    }
+}
+
+
